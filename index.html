@@ -360,7 +360,7 @@
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form>
             <label class="modal-label" for="user-name">Имя</label>
-                <input type="text" class="modal-input" name="user-name" id="user-name" required/>
+                <input type="text" class="modal-input" name="user-name" id="user-name" required autofocus />
             
             <label class="modal-label" for="user-tel">Телефон</label>
                 <input type="tel" class="modal-input" name="user-tel" id="user-tel" required />
@@ -368,11 +368,13 @@
             <label class="modal-label" for="user-email">Почта</label>
                 <input type="email" class="modal-input" name="user-email" id="user-email" required />
 
+            <label class="modal-label">
+                Комментарий
+                <textarea class="textarea" name="comment" placeholder="Введите текст"></textarea>
+            </label>
 
-            <label></label>
-            <textarea>
-            
-            </textarea>
+            <p class="adoption" >Соглашаюсь с рассылкой и принимаю<a><span class="treaty">Условия договора</span></a></p>
+
             <button class="modal-button" type="submit">Отправить</button>
         </form>
     </div>
