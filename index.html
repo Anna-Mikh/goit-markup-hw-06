@@ -352,29 +352,37 @@
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button class="button close" type="button" data-modal-close>
-        <svg class="close" width="30px" height="30px">
+        <svg class="close" width="30" height="30">
             <use href="./images/symbol-defs.svg#close"></use>
         </svg>
         </button>
 
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form>
+            <div class="modal-field">
             <label class="modal-label" for="user-name">Имя</label>
                 <input type="text" class="modal-input" name="user-name" id="user-name" required autofocus />
-            
+            <svg class="input-icon">
+                <use href="./images/symbol-defs.svg#person-black"></use>
+            </svg>
+            </div>
+            <div class="modal-field">
             <label class="modal-label" for="user-tel">Телефон</label>
                 <input type="tel" class="modal-input" name="user-tel" id="user-tel" required />
-           
+            </div>
+            <div class="modal-field">
             <label class="modal-label" for="user-email">Почта</label>
                 <input type="email" class="modal-input" name="user-email" id="user-email" required />
-
+            </div>
+            <div class="modal-field">
             <label class="modal-label">
                 Комментарий
                 <textarea class="textarea" name="comment" placeholder="Введите текст"></textarea>
             </label>
-
-            <p class="adoption" >Соглашаюсь с рассылкой и принимаю<a><span class="treaty">Условия договора</span></a></p>
-
+            </div>
+            <div class="adoption-oll">
+            <p class="adoption">Соглашаюсь с рассылкой и принимаю</p> <a><span class="treaty">Условия договора</span></a>
+            </div>
             <button class="modal-button" type="submit">Отправить</button>
         </form>
     </div>

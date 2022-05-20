@@ -791,12 +791,14 @@ a.link.current{
     margin-bottom: 28px;
 }
 
-.modal:valid {
-    border-color: rgba(33, 33, 33, 0.2);
+/* не работает!*/
+
+.modal-input:valid {
+    border-color: red;
 }
 
-.modal:invalid {
-    border-color: red;
+.modal-input:invalid {
+    border-color: rgba(33, 33, 33, 0.2);
 }
 
 .modal-label {
@@ -841,12 +843,18 @@ a.link.current{
 }
 
 .adoption {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline;
     margin-bottom: 30px;
 }
 
 .treaty {
+    display: inline;
     color: var(--sekondary-color);
+    text-decoration: underline;
+}
+
+.adoption-oll {
+
+    padding-left: auto;
+    padding-right: auto;
 }
