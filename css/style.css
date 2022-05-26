@@ -606,7 +606,13 @@ a.link.current{
 
     background-size: contain;
     background-position: 50% 50%;
+}
 
+/*ПОДПИШИТЕСЬ НА РАССЫЛКУ*/
+
+.mailing-list {
+    margin-left: 93px;
+    
 }
 
 
@@ -777,7 +783,9 @@ a.link.current{
     font-size: 20px;
     font-weight: 700;
     line-height: 1.2;
+    display: flex;
     align-items: center;
+    justify-content: center;
     color: #212121;
 }
 
@@ -865,6 +873,7 @@ a.link.current{
     color: rgba(117, 117, 117, 0.5);
     border-radius: 4px;
     outline: none;
+    margin-bottom: 10px;
 }
 
 .textarea:focus {
@@ -875,6 +884,8 @@ a.link.current{
     font-size: 14px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 .check-text span {
@@ -882,11 +893,7 @@ a.link.current{
     height: 15px;
     border: 1px solid #212121;
     margin-right: 8.38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-
 
 /*
 .check-text::before {
@@ -909,6 +916,12 @@ a.link.current{
 
 .check-icon {
     fill: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.input-check {
+    margin-bottom: 30px;
 }
 
 .input-check:checked + .check-text span {
@@ -918,4 +931,9 @@ a.link.current{
 
 .input-check:checked + .check-text .check-icon {
     fill:var(--accent-color)
+}
+
+.conditions {
+    text-decoration: underline;
+    color: var(--sekondary-color);
 }
