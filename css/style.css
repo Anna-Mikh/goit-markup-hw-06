@@ -611,10 +611,60 @@ a.link.current{
 /*ПОДПИШИТЕСЬ НА РАССЫЛКУ*/
 
 .mailing-list {
-    margin-left: 93px;
-    
+    margin-left: 93px;   
 }
 
+.footer-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-textarea {
+    resize: none;
+    height: 50px;
+    width: 358px;
+    border-color: rgba(255, 255, 255, 0.3);
+    padding: 15px 16px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+    outline: none;
+    background-color: rgba(47, 48, 58, 1);
+}
+
+.footer-textarea:focus {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border-color: var(--sekondary-color);
+}
+
+.footer-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 50px;
+
+    border: none;
+    border-radius: 4px;
+    color: var(--accent-color);
+    background-color: var(--sekondary-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    margin-left: 12px;
+    position: relative;
+}
+
+.footer-button-icon {
+    position: absolute;
+    right: 8px;
+    top: 13px;
+    bottom: 13px;
+}
 
 
 /*Страница Portfolio*/
