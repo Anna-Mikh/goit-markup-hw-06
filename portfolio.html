@@ -21,19 +21,19 @@
         <div class="header-container">
         <nav class="nav">
             <a href="" class="logo">Web<span class="logo-half">Studio</span></a>
-            <ul class="nav-title">
-                <li class="item"><a class="link" href="index.html">Студия</a></li>
-                <li class="item"><a class="link current" href="">Портфолио</a></li>
-                <li class="item"><a class="link" href="">Контакты</a></li>
+            <ul class="nav__title">
+                <li class="nav__item item"><a class="link" href="index.html">Студия</a></li>
+                <li class="nav__item item"><a class="link current" href="">Портфолио</a></li>
+                <li class="nav__item item"><a class="link" href="">Контакты</a></li>
             </ul>
         </nav>
             <ul class="nav-secondary">
-                <li class="item"><a class="link-contact" href="mailto:info@devstudio.com">
+                <li class="nav-secondary__item item"><a class="link-contact" href="mailto:info@devstudio.com">
                         <svg class="icon-contact-mail" width="16px" height="12px">
                             <use href="./images/symbol-defs.svg#envelope"></use>
                         </svg>
                         info@devstudio.com</a></li>
-                <li class="item"><a class="link-contact" href="tel:+380961111111">
+                <li class="nav-secondary__item item"><a class="link-contact" href="tel:+380961111111">
                         <svg class="icon-contact-tel" width="10px" height="16px">
                             <use href="./images/symbol-defs.svg#tel"></use>
                         </svg>
@@ -191,8 +191,8 @@
 <!--footer-->
     <footer class="footer">
         <div class="oll-foter">
-            <div class="container-logo-address">
-                <a class="logo-footer" href="">Web<span class="logo-half-footer">Studio</span></a>
+            <div class="footer__address">
+                <a class="footer__logo" href="">Web<span class="logo-half-footer">Studio</span></a>
                 <address class="address">
                     <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
                     <ul class="address-nav">
@@ -226,6 +226,20 @@
                             </svg>
                         </a></li>
                 </ul>
+            </div>
+
+            <div class="mailing mailing-list">
+                <h2 class="mailing__tille">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+                <div class="mailing__wrap">
+                    <label class="mailing__label">
+                        <textarea class="mailing__textarea" name="comment" placeholder="E-mail"></textarea>
+                    </label>
+                    <button class="mailing__button">Подписаться
+                        <svg class="mailing__button-icon" width="24px" height="24px">
+                            <use href="./images/symbol-defs.svg#send"></use>
+                        </svg></button>
+            
+                </div>
             </div>
         </div>
     </footer>
